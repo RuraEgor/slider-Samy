@@ -21,17 +21,17 @@ div {
 .slider {
     position: absolute;
     left: 50%;
-    top: 300px;
-    width: 1px;
-    background: lime;
+    top: 350px;
+    width: 0px;
     height: 100px;
     transform-style: preserve-3d;
     transition: 1s;
     transform-origin: 0;
+    transform: rotateX(-17deg) rotateY(0deg);
 }
 
 .slider:hover .item {
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
 .item {
@@ -44,7 +44,7 @@ div {
     width: 250px;
     height: 170px;
     background: gray;
-    opacity: 0.9;
+    opacity: 0.93;
     transition: transform 1s, opacity 0.4s;
     transform-origin: 0% 50%;
     cursor: pointer;
@@ -67,10 +67,12 @@ div {
     position: absolute;
     top: 200px;
     left: 50%;
-    height: 400px;
-    width: 40px;
+    height: 500px;
+    width: 240px;
     transform: translateX(-50%);
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
-    background: lime;
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    pointer-events: none;
 }
