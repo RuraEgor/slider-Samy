@@ -17,12 +17,18 @@
 </head>
 <body>
 <div class="main">
+    <div class="view-con event-none">
+        <button class="btn" onclick="view1()">Обычный вид</button>
+        <button class="btn" onclick="view2()">Поворот</button>
+    </div>
     <div class="cont" id="app">
         <div class="pers"></div>
         <div class="slider begin"></div>
     </div>
-    <button class="next" onclick="prev()">prev</button>
-    <button class="prev" onclick="next()">next</button>
+    <div class="but-cont event-none">
+        <button class="btn btn-arrow next" onclick="prev()">prev</button>
+        <button class="btn btn-arrow prev" onclick="next()">next</button>
+    </div>
 </div>
 <div class="wr_img_sl">
     <img src="img/1.jpg" alt="">
